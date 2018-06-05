@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Word Guess Game</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Fredericka+the+Great|Gaegu|Jua|Londrina+Shadow|Love+Ya+Like+A+Sister|Luckiest+Guy|Modak|Patrick+Hand+SC|Slabo+27px" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<!-- 3. Use key events to listen for the letters that your players will type.
+
+4. Display the following on the page:
+
+5. Press any key to get started!
+
+6. Wins: (# of times user guessed the word correctly).
+
+   * If the word is `madonna`, display it like this when the game starts: `_ _ _ _ _ _ _`.
+
+   * As the user guesses the correct letters, reveal them: `m a d o _  _ a`.
+
+7. Number of Guesses Remaining: (# of guesses remaining for the user).
+
+8. Letters Already Guessed: (Letters the user has guessed, displayed like `L Z Y H`).
+
+9. After the user wins/loses the game should automatically choose another word and make the user play it. -->
+
+<body>
+    <header>
+        <div id="gameLogo">
+            <h1>Hangman</h1>
+            <h2>Cartoons Theme</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="winsImage">
+            <h4>Wins</h4>
+            <p id="numWins"></p>
+            <img id="answerImage" src="" alt="">
+        </div>
+
+        <div class="game">
+            <h3>Guess the word!</h3>
+            <p id="answerWord"></p>
+        </div>
+
+        <div class="guessesLetters">
+            <h4 id="numGuesses"></h4>
+            <h4>Guessed Letters</h4>
+            <p id="guessedLetters"></p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="copyright">
+            Copyright &copy;
+        </div>
+    </footer>
+    
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+</html>
