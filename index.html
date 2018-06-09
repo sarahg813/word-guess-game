@@ -5,63 +5,45 @@
 
     <title>Word Guess Game</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Fredericka+the+Great|Gaegu|Jua|Londrina+Shadow|Love+Ya+Like+A+Sister|Luckiest+Guy|Modak|Patrick+Hand+SC|Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Fredericka+the+Great|Gaegu|Jua|Rancho|Londrina+Shadow|Love+Ya+Like+A+Sister|Luckiest+Guy|Modak|Patrick+Hand+SC|Slabo+27px|Bowlby+One" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<!-- 3. Use key events to listen for the letters that your players will type.
 
-4. Display the following on the page:
-
-5. Press any key to get started!
-
-6. Wins: (# of times user guessed the word correctly).
-
-   * If the word is `madonna`, display it like this when the game starts: `_ _ _ _ _ _ _`.
-
-   * As the user guesses the correct letters, reveal them: `m a d o _  _ a`.
-
-7. Number of Guesses Remaining: (# of guesses remaining for the user).
-
-8. Letters Already Guessed: (Letters the user has guessed, displayed like `L Z Y H`).
-
-9. After the user wins/loses the game should automatically choose another word and make the user play it. -->
 
 <body>
-    <header>
-        <div id="gameLogo">
-            <h1>Hangman</h1>
-            <h2>Cartoons Theme</h2>
+    <header class="main-header"></header>
+            <h1>HANGMAN</h1>
+            <h2>90s CARTOONS</h2>
         </div>
     </header>
 
     <main>
-        <div class="winsImage">
-            <h4>Wins</h4>
-            <p id="numWins"></p>
-            <img id="answerImage" src="" alt="">
-        </div>
 
-        <div class="game">
-            <h3>Guess the word!</h3>
-            <p id="answerWord"></p>
-        </div>
+        <div class="row">
+            <div class="primary col">
+                <h4>Wins</h4>
+                <p id="numWins"></p>
+                <h4>Losses</h4>
+                <p id="numLosses"></p>
+                <img id="answerImage" src="" alt="">
+            </div>  
+        
+            <div class="secondary col">
+                <h3>Guess the word!</h3>
+                <p id="answerWord"> </p>
+            </div>
 
-        <div class="guessesLetters">
-            <h4 id="numGuesses"></h4>
-            <h4>Guessed Letters</h4>
-            <p id="guessedLetters"></p>
+            <div class="tertiary col">
+                <h4>You have <span id="numGuesses"></span> lives remaining.</h4>
+                <h4>Guessed Letters</h4>
+                <p id="guessedLetters"></p>
+            </div>
         </div>
-
     </main>
 
-    <footer>
-        <div id="copyright">
-            Copyright &copy;
-        </div>
-    </footer>
     
     <script src="assets/javascript/game.js" type="text/javascript"></script>
 </body>

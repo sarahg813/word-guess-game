@@ -1,0 +1,63 @@
+
+h1 {
+    font-family: 'Slabo 27px', serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Bowlby One', cursive;
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+h3{
+    font-family: 'Bangers', cursive;
+    font-size: 2.5em;
+}
+
+h4 {
+    font-family: 'Rancho', cursive;
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.75em;
+} 
+
+#answerWord {
+    letter-spacing: .25em;
+}
+
+.row .col {
+    padding: .8em;
+    background-color: #EBEDEF;
+    border-radius: .35em;
+    margin: 0 .5em .8em; 
+}
+
+@media (min-width: 768px) {
+    .row {
+      display: flex;
+      width: 90%;
+      margin: 0 auto; 
+    }
+    .row .col {
+        display: flex;
+        flex-direction: column;
+        flex: 1; 
+    } 
+}
+
+@media (min-width: 992px) {
+    .row {
+      width: 80%;
+      max-width: 1150px; 
+    } 
+}
